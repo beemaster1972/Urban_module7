@@ -21,7 +21,7 @@ class WordsFinder:
     def find(self, word: str):
         result = {}
         for key, val in self.all_words.items():
-            result[key] = val.index(word.lower())
+            result[key] = val.index(word.lower())+1
         return result
 
     def count(self, word: str):
